@@ -14,13 +14,6 @@ public class BeautifulPairs {
 		}
 		Arrays.sort(a);
 		Arrays.sort(b);
-		/*for(int i = 0 ; i < n; i++){
-			System.out.print(a[i]+" ");
-		}
-		System.out.println("");
-		for(int i =0; i< n; i++){
-			System.out.print(b[i]+" ");
-		}*/
 		int i = 0, j =0, count = 0;
 		boolean hasChange = false;
 		while(i<n && j<n){

@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class PermutingTwoArrays {
@@ -30,25 +28,19 @@ public class PermutingTwoArrays {
 		HashMap<Integer, Integer> hashMap = new HashMap<>(n);
 		for(int i = 0; i < n; i++){
 			if(hashMap.containsKey(a[i])){
-				//System.out.println("Yes" + a[i] );
 				hashMap.put(a[i], hashMap.get(a[i])+1);
 			}else{
-				//System.out.println("No" + a[i] );
 				hashMap.put(a[i], 1);
 			}
 		}
 		for(int i = 0 ; i < n; i++){
 			if(hashMap.containsKey(k-b[i]) ){
-				//System.out.println(b[i] + " " + (k-b[i]) + " " + hashMap.get(k-b[i]) + " test" );
 				hashMap.put(k-b[i], hashMap.get(k-b[i])-1);
 			}else{
-				//System.out.println("Not contain" + (k-b[i]));
 				return false;
 			}
 		}
-		return true;
-		// TODO Auto-generated method stub
-		
+		return true;		
 	}
 
 }

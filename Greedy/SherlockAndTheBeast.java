@@ -1,4 +1,3 @@
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class SherlockAndTheBeast {
@@ -37,15 +36,12 @@ public class SherlockAndTheBeast {
 	
 	public static String getNumber(int n5, int n){
 		String num = "";
-		//System.out.println("here");
 		for(int j = 0; j < n; j++){
 			
 			if(j <n5){
 				System.out.print("5");
-				//num = num + "5";
 			}else{
 				System.out.print("3");
-				//num = num + "3";
 			}
 			
 		}
